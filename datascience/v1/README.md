@@ -2,19 +2,9 @@
 ```python
 datascience_v1 = upsonic.load_module("datascience.v1")
 ```
-<br><b class="custom_code_highlight_green">Explanation:</b><br>The 'datascience.v1' library in Python is a collection of functions designed to facilitate various stages of data handling and machine learning model creation and evaluation. It includes functions to create a CSV dataset, fill missing values, load data, one-hot encode categorical variables, plot histograms, and train and evaluate different machine learning models.
+<br><b class="custom_code_highlight_green">Explanation:</b><br>The 'datascience.v1' library is a collection of Python functions designed to facilitate various data science tasks, especially those related to machine learning pipeline, such as data preparation, model training, feature engineering, model evaluation, and data visualization. The functions in this library handle aspects of reading and creating data, filling missing values, conducting one-hot encoding for categorical variables, creating graphical representation of data, and development and evaluation of machine learning models. By using these functions, a user can simplify and streamline their data science work. Functions are available for working with linear regression, tuning a K-Nearest Neighbors model, and Calculating Mean Squared Error, among other tasks. Hence, it can be an incredibly versatile tool for anyone involved in data science or machine learning.
 
-The 'create_data' function generates a dataset in CSV format, while 'fill_missing' helps in dealing with missing data in a dataset. The 'load_data' function is used to read CSV files and return pandas DataFrames. 'one_hot_encode' enables transformation of categorical data into a format suitable for machine learning models. 
-
-To assist with the exploration and understanding of data, there is a 'plot_hist' function for histogram visualization. The 'train_model' function initiates the training process for a linear regression model, and 'evaluate_model' allows assessment of model performance using mean squared error.
-
-For more sophisticated model tuning, a 'tune_knn_model' function is provided which uses grid search to optimize the parameters of a K-nearest neighbors (KNN) classification model.
-
-In essence, this library simplifies the process of data preprocessing, exploratory data analysis, and machine learning model creation and evaluation.
-
-<b class="custom_code_highlight_green">Use Case:</b><br>The 'datascience.v1' library in Python is designed to provide a set of functions for implementing various stages of a data science pipeline. It features functions to create data files, load and preprocess data (by handling missing values and converting categorical variables into a numerical format), visualize data through histograms, and implement machine learning models such as Linear Regression and K-Nearest Neighbours (KNN).
-
-The functions in this library allow data scientists to quickly load and preprocess data, train models, evaluate their performance, and even optimize hyperparameters if necessary. By providing these functionalities, it helps in speeding up the process of developing and testing algorithms for data science projects. Through its focus on data handling, model creation, and model evaluation, this library covers most aspects of a typical data science workflow.
+<b class="custom_code_highlight_green">Use Case:</b><br>The 'datascience.v1' library is aimed to provide functions and methods to facilitate various aspects of data science activities, including data preprocessing, model training, evaluation, and tuning. Its elements are designed to handle tasks such as creating and loading data files, filling missing data values, one-hot encoding for categorical variables, plotting histograms for given data columns, and training Linear Regression and K-Nearest Neighbors (KNN) models. It also offers a function for model evaluation using Mean Squared Error method. Additionally, the library includes a function to conduct a grid-based hyperparameters tuning for a KNN classifier model. Thus, it serves as a comprehensive package for performing fundamental data science tasks for machine learning modeling.
 <br><b class="custom_code_highlight_green">Content:</b><br>
   - datascience.v1.create_data
   - datascience.v1.evaluate_model
