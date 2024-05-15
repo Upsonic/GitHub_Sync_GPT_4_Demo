@@ -2,15 +2,17 @@
 ```python
 datascience = upsonic.load_module("datascience")
 ```
-<br><b class="custom_code_highlight_green">Explanation:</b><br>The 'datascience' library, as suggested by its name, is a Python package that has multiple functions intended to facilitate various tasks in the field of Data Science. These include creating and loading data, preparing it for analysis by handling missing values and encoding categorical variables, visualizing data through histograms, training predictive models such as linear regression and k-nearest neighbors (KNN), evaluating model performance, and optimizing a KNN model's parameters. Essentially, the library provides a structured and simplified approach to handle the complete lifecycle of data analysis and predictive modeling projects.
+<br><b class="custom_code_highlight_green">Explanation:</b><br>The 'datascience' library provides a collection of functions designed to streamline tasks commonly performed in data science projects. It includes elements for creating and loading data, handling missing values, encoding categorical data, visualizing data, modeling and model evaluation. 
 
-<b class="custom_code_highlight_green">Use Case:</b><br>The 'datascience' library is a Python library designed to simplify the process of working with data in various stages of the data science pipeline. It consists of a collection of functions aiming to help with data preprocessing, model training, and model evaluation. 
+The 'create_data' function generates a CSV data with fixed values, while 'load_data' retrieves data from a CSV file into a dataframe. The 'fill_missing' function replaces missing values in the dataset to make it cleaner and more usable. 
 
-The library includes functions for tasks like creating and loading data from a CSV file, filling missing values in a dataset, and encoding categorical data for better performance in machine learning models. 
+The 'one_hot_encode' function converts categorical data into a binary format suitable for machine learning algorithms. 'plot_hist' allows for the visualization of a dataset's distribution. 
 
-On the model development side, there are functions designated for training and evaluating predictive models, like Linear Regression and K-Nearest Neighbors classifier. Some functions even handle model tuning, adjusting the parameters of a predictive model to increase its performance.
+For model creation and evaluation, 'train_model' is used for creating and training a Linear Regression model, 'evaluate_model' assesses a model's performance by calculating its mean squared error, and 'tune_knn_model' optimizes a K-Nearest Neighbors model's parameters for improved predictive accuracy.
 
-Overall, the goal for using this library is to provide a streamlined and simplified process for managing data, training models, and ensuring optimal model performance in a Python-based data science workflow.
+In essence, this library serves as a utility tool for data scientists dealing with data manipulation, analysis and prediction tasks in their workflows.
+
+<b class="custom_code_highlight_green">Use Case:</b><br>The 'datascience' library is a set of Python functions designed to conduct various data science tasks. The function 'create_data' generates a CSV file with specific content which can be used for testing or development purposes. The functions 'load_data' and 'fill_missing' are used to load a dataset from a CSV file into a pandas DataFrame and clean the data by filling in any missing values. To cater for categorical variables in predictive modeling, the 'one_hot_encode' function can be used to transform these variables into a machine-readable format. Moreover, the function 'plot_hist' provides a way to perform exploratory data analysis by creating a histogram for a specified column in a dataset. Lastly, three functions - 'train_model', 'tune_knn_model', and 'evaluate_model' - enable the training and evaluation of regression and K-Nearest Neighbors classification models, respectively. The main purpose of this library, therefore, is to facilitate the process of preparing, exploring, training, and assessing machine learning models for data analysis tasks.
 <br><b class="custom_code_highlight_green">Content:</b><br>
   - datascience.v1.create_data
   - datascience.v1.evaluate_model
