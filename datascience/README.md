@@ -2,16 +2,17 @@
 ```python
 datascience = upsonic.load_module("datascience")
 ```
-<br><b class="custom_code_highlight_green">Explanation:</b><br>The 'datascience' library is a collection of Python functions designed to streamline and automate various stages of a data science process. The library provides functions to load and preprocess data, fill missing values, one-hot encode categorical columns, as well as create and evaluate several types of machine learning models. 
+<br><b class="custom_code_highlight_green">Explanation:</b><br>The 'datascience' library is a collection of functions designed to streamline common tasks in data handling and machine learning. These tasks include creating and loading dataset from files, filling in missing data values, training and evaluating machine learning models, and visualizing data distribution. This library aims to simplify complex processes in data science by providing pre-built functions for repetitive tasks, thereby enabling users to focus more on data interpretation and less on the technical aspects of preparing data and models. Functions included in the library cover a wide range of tasks starting from preprocessing steps, through to training, tuning and, evaluating models, making it an all-in-one toolkit for data science tasks.
 
-For instance, 'create_data' generates a CSV-like data file, 'load_data' reads such files into a pandas dataframe, and 'fill_missing' replaces any missing values. The library provides functions for visualizing data as well, specifically 'plot_hist' for plotting histograms. 
+<b class="custom_code_highlight_green">Use Case:</b><br>The 'datascience' library appears to be a custom-made library, designed to perform a series of data science operations in a more organized, modular and accessible manner. This library provides functions for data manipulation, preprocessing, visualization, model training, model evaluation, and hyperparameter tuning.
 
-Moreover, 'train_model' and 'evaluate_model' are used to create, train and validate a Linear Regression model, whereas 'tune_knn_model' uses grid search cross-validation to optimize a K-nearest neighbors classifier.
+The 'create_data' function simplifies the task of generating a CSV file with pre-defined data. 'load_data' and 'fill_missing' help with data preprocessing steps such as loading CSV data into pandas DataFrames and handling missing values, respectively. 
 
-Overall, the 'datascience' library is a utility toolkit for anyone handling data analysis and predictive modeling tasks.
+'One_hot_encode' aids in transforming categorical data into a machine-readable format. 'plot_hist' provides a straightforward method for plotting histograms for data analysis and visualization. 
 
-<b class="custom_code_highlight_green">Use Case:</b><br>The 'datascience' library is a collection of functions that are used for various data science tasks including data creation, loading, model training, evaluation, and tuning. Data augmentation functions like 'fill_missing' and 'one_hot_encode' are used for preprocessing, preparing the data for model training. The model training and evaluation happen using 'train_model', 'evaluate_model', and 'tune_knn_model'. These functions provide seamless interfaces for training machine learning models, such as Linear Regression and KNN, evaluating their performance and tuning hyperparameters. The 'plot_hist' function provides data visualization capabilities. Overall, this library streamlines the process of working with data and building machine learning models.
+The 'train_model' and 'evaluate_model' allow users to easily train a linear regression model and evaluate its performance using the mean squared error, respectively. Finally, the 'tune_knn_model' is for tuning the number of neighbors parameter in a k-nearest neighbors classifier, facilitating model optimization.
 
+In general, the 'datascience' library facilitates structured design and modular workflow in a data science project, hence improving efficiency and readability of the code.
 <br><b class="custom_code_highlight_green">Content:</b><br>
   - datascience.v1.create_data
   - datascience.v1.evaluate_model
