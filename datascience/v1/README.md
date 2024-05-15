@@ -2,20 +2,11 @@
 ```python
 datascience_v1 = upsonic.load_module("datascience.v1")
 ```
-<br><b class="custom_code_highlight_green">Explanation:</b><br>The 'datascience.v1' library contains a collection of functions designed for various stages of a data science workflow. It includes components such as 'create_data', which allows for the generation of CSV data, 'load_data' that reads and loads a CSV file into a pandas DataFrame, and 'fill_missing' to cleanse the dataset by replacing missing values. It also provides capabilities for data exploration and visualization with 'plot_hist'. 
+<br><b class="custom_code_highlight_green">Explanation:</b><br>The 'datascience.v1' library is a collection of functions to assist in various stages of data management and analysis. The 'create_data' function generates a data file with preset values. The 'fill_missing' function fills in missing values in the data to prevent errors or inaccurate results. The 'load_data' function reads a CSV file and returns it as a Pandas DataFrame. The 'one_hot_encode' function converts specified data into a one-hot encoded format, aiding in machine learning algorithms. The 'plot_hist' function provides a statistical representation of distributed data through a histogram. The 'train_model' function pre-processes data and builds a Linear Regression model. The 'tune_knn_model' function optimizes a K-Nearest Neighbors Classification model. Each function aids in the end-to-end process of data manipulation, analysis, and modeling.
 
-For model development and validation, it includes 'train_model' and 'evaluate_model'. The 'train_model' function prepares a DataFrame for a Linear Regression Model, trains it and returns the model for further uses. The 'evaluate_model' leverages Mean Squared Error to assess the model's predictive accuracy.
-
-The 'one_hot_encode' function converts categorical data for better predictive model performance, and finally, 'tune_knn_model' is designed to optimize the K-Nearest Neighbors model for best results.  This library simplifies a lot of data science chores by providing ready-to-use functions.
-
-<b class="custom_code_highlight_green">Use Case:</b><br>The 'datascience.v1' library is a custom Python library aimed at making data handling, analysis, visualization, and machine learning model creation easier in the context of data science. The 'create_data' function is used for generating CSV file data, 'load_data' for reading CSV files into a DataFrame, and 'fill_missing' for handling missing values.
-
-Further, 'one_hot_encode' function helps in transforming categorical data into a format ideal for machine learning algorithms. The 'train_model' function assists in training a linear regression model on a given dataset. The 'evaluate_model' function evaluates a model's performance using Mean Squared Error.
-
-For visual data analysis, 'plot_hist' is used to create and display a histogram of a particular attribute. Finally, 'tune_knn_model' is designed to tune and optimize parameters for a K-Nearest Neighbors (KNN) classification model using GridSearchCV, ensuring better results when making predictions. Overall, this library continues to automate various repetitive and complex tasks associated with a typical data science pipeline.
+<b class="custom_code_highlight_green">Use Case:</b><br>The 'datascience.v1' library is a collection of functions designed to automate common tasks in a data science project, from data creation to model training and tuning. The 'create_data' function generates a CSV file filled with individual records, simulating real-world data collection. 'fill_missing' fills in missing values in a dataset to prevent calculation errors, and 'load_data' loads a CSV file into a pandas DataFrame for easy manipulation. 'one_hot_encode' changes categorical data into binary format this allows machine learning algorithms to interact with the data. 'plot_hist' provides a statistical representation of dataset distributions. The 'train_model' function trains a linear regression model, with the trained model ready for predictions. 'tune_knn_model' optimizes a KNeighborsClassifier model with GridSearchCV, which helps in determining the best 'k' value for making predictions. Overall, this library provides a set of utilities meant for efficient handling and analysis of data.
 <br><b class="custom_code_highlight_green">Content:</b><br>
   - datascience.v1.create_data
-  - datascience.v1.evaluate_model
   - datascience.v1.fill_missing
   - datascience.v1.load_data
   - datascience.v1.one_hot_encode
